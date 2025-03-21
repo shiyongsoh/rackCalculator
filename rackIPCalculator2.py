@@ -7,6 +7,7 @@ def calculateIP(rack_label):
     print(f"Octal numeral: {decimalEquivalent}")
     # decimal_equivalent = int(str(octal_numeral), 8)
     last_octet_isp1 = decimalEquivalent * 4
+    print("network and subnet mask for ISP1 and ISP2, refer to VLSM table")
     print(f"ISP1: 172.17.9.{last_octet_isp1}/30")
     multiplied_value = decimalEquivalent * 8
     q = multiplied_value // 256
@@ -25,5 +26,5 @@ def calculateAllRack():
 # calculateIP(rack_label)
 calculateAllRack()
 
-#Thanks to the person in rack 3f for the idea of writing this script, however, some should learn to be nice.
+#Thanks to the person in rack 3f for the idea of writing this script
 #Do validate the output of this script with the output of rackIPCalculator.py
